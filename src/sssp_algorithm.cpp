@@ -6,6 +6,7 @@
 namespace sssp {
 
 void SSSPAlgorithm::relax_edge(vertex_t u, vertex_t v, weight_t w) {
+    // Remark 3.4: Use non-strict inequality (≤) to allow edge reuse across levels
     if (db[u] + w <= db[v]) {
         db[v] = db[u] + w;
         pred[v] = u;

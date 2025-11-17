@@ -5,13 +5,22 @@ namespace sssp {
 
 // Convert to constant degree graph as described in the paper
 Graph Graph::to_constant_degree(const Graph& g) {
-    // Count total vertices needed
+    // First pass: compute in-degrees for each vertex
+    std::vector<size_t> in_degree(g.n, 0);
+    for (vertex_t u = 0; u < g.n; u++) {
+        for (const auto& e : g.adj[u]) {
+            in_degree[e.to]++;
+        }
+    }
+
+    // Second pass: count total vertices needed (cycle size = in-degree + out-degree)
     vertex_t total_vertices = 0;
     std::vector<vertex_t> vertex_offsets(g.n + 1);
 
     for (vertex_t v = 0; v < g.n; v++) {
-        size_t degree = g.adj[v].size() + g.out_degree(v);
-        vertex_t needed = (degree > 0) ? std::max(degree, (size_t)2) : 1;
+        size_t out_deg = g.adj[v].size();
+        size_t total_deg = in_degree[v] + out_deg;
+        vertex_t needed = std::max(total_deg, (size_t)2); // At least 2 for cycle
         vertex_offsets[v] = total_vertices;
         total_vertices += needed;
     }

@@ -43,13 +43,15 @@ public:
     // Convert to constant degree graph (Algorithm preprocessing)
     static Graph to_constant_degree(const Graph& g);
 
-    // Parameters from the paper
+    // Parameters from the paper: k = ⌊log^(1/3) n⌋, t = ⌊log^(2/3) n⌋
     static uint32_t compute_k(vertex_t n) {
-        return static_cast<uint32_t>(std::floor(std::pow(std::log(n), 1.0/3.0)));
+        if (n <= 2) return 1; // Safeguard for very small graphs
+        return std::max(1u, static_cast<uint32_t>(std::floor(std::pow(std::log(n), 1.0/3.0))));
     }
 
     static uint32_t compute_t(vertex_t n) {
-        return static_cast<uint32_t>(std::floor(std::pow(std::log(n), 2.0/3.0)));
+        if (n <= 2) return 1; // Safeguard for very small graphs
+        return std::max(1u, static_cast<uint32_t>(std::floor(std::pow(std::log(n), 2.0/3.0))));
     }
 };
 
