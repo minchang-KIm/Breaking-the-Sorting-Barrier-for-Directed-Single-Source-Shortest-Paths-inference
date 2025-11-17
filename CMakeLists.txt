@@ -38,6 +38,7 @@ set(CORE_SOURCES
     src/graph.cpp
     src/partial_sort_ds.cpp
     src/sssp_algorithm.cpp
+    src/classical_sssp.cpp
 )
 
 set(PARALLEL_SOURCES
