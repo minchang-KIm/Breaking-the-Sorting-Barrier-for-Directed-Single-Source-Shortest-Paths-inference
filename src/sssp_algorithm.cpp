@@ -22,6 +22,7 @@
 #include "sssp_algorithm.hpp"
 #include <queue>
 #include <algorithm>
+#include <functional>
 #include <map>
 #include <cmath>
 #include <stdexcept>
