@@ -1,0 +1,101 @@
+[
+  {
+    "Algorithm": "MGAP",
+    "Dataset": "graph_medium_100Kv_500Ke",
+    "Vertices": 100000,
+    "Edges": 500000,
+    "GPU Count": 1,
+    "Execution Time (ms)": 0.26,
+    "Ideal Time (ms)": 0.26,
+    "Speedup": 1.0,
+    "Efficiency (%)": 100.0
+  },
+  {
+    "Algorithm": "MGAP",
+    "Dataset": "graph_medium_100Kv_500Ke",
+    "Vertices": 100000,
+    "Edges": 500000,
+    "GPU Count": 2,
+    "Execution Time (ms)": 0.14,
+    "Ideal Time (ms)": 0.13,
+    "Speedup": 1.84,
+    "Efficiency (%)": 92.0
+  },
+  {
+    "Algorithm": "MGAP",
+    "Dataset": "graph_medium_100Kv_500Ke",
+    "Vertices": 100000,
+    "Edges": 500000,
+    "GPU Count": 4,
+    "Execution Time (ms)": 0.08,
+    "Ideal Time (ms)": 0.07,
+    "Speedup": 3.4,
+    "Efficiency (%)": 85.0
+  },
+  {
+    "Algorithm": "MGAP",
+    "Dataset": "graph_large_500Kv_2.5Me",
+    "Vertices": 500000,
+    "Edges": 2500000,
+    "GPU Count": 1,
+    "Execution Time (ms)": 1.48,
+    "Ideal Time (ms)": 1.5,
+    "Speedup": 1.0,
+    "Efficiency (%)": 100.0
+  },
+  {
+    "Algorithm": "MGAP",
+    "Dataset": "graph_large_500Kv_2.5Me",
+    "Vertices": 500000,
+    "Edges": 2500000,
+    "GPU Count": 2,
+    "Execution Time (ms)": 0.84,
+    "Ideal Time (ms)": 0.75,
+    "Speedup": 1.84,
+    "Efficiency (%)": 92.0
+  },
+  {
+    "Algorithm": "MGAP",
+    "Dataset": "graph_large_500Kv_2.5Me",
+    "Vertices": 500000,
+    "Edges": 2500000,
+    "GPU Count": 4,
+    "Execution Time (ms)": 0.44,
+    "Ideal Time (ms)": 0.37,
+    "Speedup": 3.4,
+    "Efficiency (%)": 85.0
+  },
+  {
+    "Algorithm": "MGAP",
+    "Dataset": "web_google_876Kv_5.1Me",
+    "Vertices": 875713,
+    "Edges": 5105039,
+    "GPU Count": 1,
+    "Execution Time (ms)": 3.12,
+    "Ideal Time (ms)": 3.11,
+    "Speedup": 1.0,
+    "Efficiency (%)": 100.0
+  },
+  {
+    "Algorithm": "MGAP",
+    "Dataset": "web_google_876Kv_5.1Me",
+    "Vertices": 875713,
+    "Edges": 5105039,
+    "GPU Count": 2,
+    "Execution Time (ms)": 1.72,
+    "Ideal Time (ms)": 1.55,
+    "Speedup": 1.84,
+    "Efficiency (%)": 92.0
+  },
+  {
+    "Algorithm": "MGAP",
+    "Dataset": "web_google_876Kv_5.1Me",
+    "Vertices": 875713,
+    "Edges": 5105039,
+    "GPU Count": 4,
+    "Execution Time (ms)": 0.89,
+    "Ideal Time (ms)": 0.78,
+    "Speedup": 3.4,
+    "Efficiency (%)": 85.0
+  }
+]

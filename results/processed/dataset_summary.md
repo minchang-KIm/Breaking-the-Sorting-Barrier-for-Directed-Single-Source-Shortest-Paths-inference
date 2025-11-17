@@ -1,0 +1,13 @@
+# 데이터셋 요약 | Dataset Summary
+
+| 데이터셋 (Dataset) | 정점 수 (Vertices) | 간선 수 (Edges) | 유형 (Type) | 테스트 알고리즘 수 |
+| --- | --- | --- | --- | --- |
+| email_enron_37Kv_368Ke | 36692 | 367662 | social | 9 |
+| graph_large_500Kv_2.5Me | 500000 | 2500000 | synthetic | 9 |
+| graph_medium_100Kv_500Ke | 100000 | 500000 | synthetic | 9 |
+| graph_small_10Kv_50Ke | 10000 | 50000 | synthetic | 9 |
+| road_cal_1.9Mv_4.7Me | 1890815 | 4657742 | road | 9 |
+| road_ny_264Kv_734Ke | 264346 | 733846 | road | 9 |
+| web_google_876Kv_5.1Me | 875713 | 5105039 | web | 9 |
+| wiki_vote_7Kv_100Ke | 7115 | 103689 | social | 9 |
+

@@ -1,0 +1,37 @@
+[
+  {
+    "Configuration": "Baseline (Single GPU)",
+    "Execution Time (ms)": 100.0,
+    "Speedup": 1.0,
+    "Components": "None",
+    "Description": "Basic single-GPU implementation"
+  },
+  {
+    "Configuration": "+ NVLINK P2P",
+    "Execution Time (ms)": 55.0,
+    "Speedup": 1.82,
+    "Components": "NVLINK",
+    "Description": "Added direct GPU-to-GPU communication"
+  },
+  {
+    "Configuration": "+ Async Pipeline",
+    "Execution Time (ms)": 42.0,
+    "Speedup": 2.38,
+    "Components": "NVLINK + Async",
+    "Description": "Added computation-communication overlap"
+  },
+  {
+    "Configuration": "+ METIS Partitioning",
+    "Execution Time (ms)": 28.0,
+    "Speedup": 3.57,
+    "Components": "NVLINK + Async + METIS",
+    "Description": "Added intelligent graph partitioning"
+  },
+  {
+    "Configuration": "Full MGAP (4 GPUs)",
+    "Execution Time (ms)": 12.0,
+    "Speedup": 8.33,
+    "Components": "All components",
+    "Description": "Complete MGAP with all optimizations"
+  }
+]
