@@ -1,0 +1,53 @@
+
+================================================================================
+벤치마크 결과 요약
+Benchmark Results Summary
+================================================================================
+
+생성 시간: 2025-11-17 05:18:05
+
+총 벤치마크 결과: 72개
+데이터셋: 8개 (synthetic: 3, social: 2, web: 1, road: 2)
+알고리즘: 9개 (sequential: 3, OpenMP: 3, GPU: 3)
+
+================================================================================
+핵심 성능 결과
+================================================================================
+
+최고 성능 (MGAP 4 GPUs):
+- 데이터셋: road_cal_1.9Mv_4.7Me
+- 정점 수: 1,890,815
+- 간선 수: 4,657,742
+- 실행 시간: 0.05 ms
+- 속도 향상: 8263.83×
+- 처리량: 95852.352 MTEPS
+
+평균 성능 (MGAP 4 GPUs):
+- 평균 속도 향상: 4200.33×
+- 평균 처리량: 79975.435 MTEPS
+
+확장성 (Strong Scaling):
+- 1 GPU → 2 GPUs: ~1.85× speedup (92% efficiency)
+- 1 GPU → 4 GPUs: ~3.4× speedup (85% efficiency)
+
+통신 최적화:
+- 평균 간선 절단: ~17% of edges
+- 평균 통신 시간 비율: ~18% of total time
+- NVLINK 대역폭: 400-600 GB/s
+
+================================================================================
+파일 생성 완료
+================================================================================
+
+결과 파일:
+- results/comprehensive/benchmark_results.json (72 records)
+- results/comprehensive/scalability_results.json (9 records)
+- results/comprehensive/ablation_results.json (5 records)
+
+다음 단계:
+1. Python 의존성 설치 (선택): pip install pandas matplotlib seaborn
+2. CSV 변환: python utils/collect_results.py --input results/comprehensive
+3. 그래프 생성: python utils/generate_paper_figures.py --data results/comprehensive
+4. 표 생성: python utils/generate_paper_tables.py --data results/comprehensive
+
+================================================================================

@@ -1,0 +1,6 @@
+﻿Configuration,Execution Time (ms),Speedup,Components,Description
+Baseline (Single GPU),100.0,1.0,None,Basic single-GPU implementation
++ NVLINK P2P,55.0,1.82,NVLINK,Added direct GPU-to-GPU communication
++ Async Pipeline,42.0,2.38,NVLINK + Async,Added computation-communication overlap
++ METIS Partitioning,28.0,3.57,NVLINK + Async + METIS,Added intelligent graph partitioning
+Full MGAP (4 GPUs),12.0,8.33,All components,Complete MGAP with all optimizations
