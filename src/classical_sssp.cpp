@@ -11,6 +11,7 @@
 
 #include "classical_sssp.hpp"
 #include <queue>
+#include <set>
 #include <algorithm>
 #include <limits>
 
