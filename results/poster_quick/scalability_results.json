@@ -1,0 +1,26 @@
+[
+    {
+        "Algorithm": "cuda",
+        "Dataset": "graph_medium_100000v_500000e.txt",
+        "GPU Count": 1,
+        "Execution Time (ms)": 52.8,
+        "Speedup": 1.0,
+        "Efficiency (%)": 100.0
+    },
+    {
+        "Algorithm": "mgap",
+        "Dataset": "graph_medium_100000v_500000e.txt",
+        "GPU Count": 2,
+        "Execution Time (ms)": 28.5,
+        "Speedup": 1.85,
+        "Efficiency (%)": 92.5
+    },
+    {
+        "Algorithm": "mgap",
+        "Dataset": "graph_medium_100000v_500000e.txt",
+        "GPU Count": 4,
+        "Execution Time (ms)": 15.2,
+        "Speedup": 3.47,
+        "Efficiency (%)": 86.8
+    }
+]
